@@ -27,10 +27,12 @@ This project requires no specialized hardware beyond a standard computer webcam.
 **1. Clone or Extract the Project**
 Ensure you have the project files in a single directory structured like this:
 
+```text
   Air_Canvas_Project/
   ├── main.py
   ├── requirements.txt
   └── README.md
+```
 
 **2. Install Dependencies**
 It is recommended to run this project using Python 3.8 or higher. Open your terminal or command prompt and install the required libraries using pip:
