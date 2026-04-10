@@ -1,4 +1,4 @@
-# Air Canvas
+# Air Canvas 🎨
 **A Computer Vision-Based Touchless Drawing Interface**
 
 **Author:** Shiv Brahmbhatt
