@@ -1,0 +1,50 @@
+# Air Canvas
+**A Computer Vision-Based Touchless Drawing Interface**
+
+**Author:** Shiv Brahmbhatt
+
+## Overview
+Air Canvas is an interactive, purely software-based application that transforms a standard webcam into a touchless digital drawing board. By utilizing computer vision and hand-tracking algorithms, the application allows users to draw, paint, and erase on a virtual screen using only natural hand gestures. 
+
+This project explores the intersection of human-computer interaction (HCI) and augmented reality without the need for specialized hardware or depth sensors.
+
+## Features
+* **Touchless Drawing:** Draw continuous strokes in free space using your index finger.
+* **Real-Time Tracking:** High-fidelity skeletal hand tracking with minimal latency.
+* **Virtual Interface:** Hover over on-screen buttons to switch between brush colors (Red, Blue, Green).
+* **Eraser Function:** A dedicated mode to clear strokes using a larger brush radius.
+* **State-Machine Logic:** The system intuitively switches between "Selection Mode" (two fingers) and "Drawing Mode" (one finger).
+
+## Technologies Used
+* **Python:** Core programming language.
+* **OpenCV (opencv-python):** Used for video frame capture, image processing, and rendering the digital canvas.
+* **MediaPipe (mediapipe):** Google's open-source framework used for 3D hand landmark detection.
+* **NumPy (numpy):** Used for matrix operations and handling the canvas array.
+
+## Setup and Installation
+This project requires no specialized hardware beyond a standard computer webcam. 
+
+**1. Clone or Extract the Project**
+Ensure you have the project files in a single directory structured like this:
+
+  Air_Canvas_Project/
+  ├── main.py
+  ├── requirements.txt
+  └── README.md
+
+**2. Install Dependencies**
+It is recommended to run this project using Python 3.8 or higher. Open your terminal or command prompt and install the required libraries using pip:
+
+  pip install -r requirements.txt
+
+## How to Run
+Execute the main Python script from your terminal:
+
+  python main.py
+
+## Usage Instructions
+Once the application launches, position yourself clearly in front of the webcam.
+
+1. **To Select/Hover:** Extend both your Index and Middle fingers. Move your hand to the top of the screen to select a color from the palette (Red, Blue, Green, or Eraser).
+2. **To Draw:** Extend ONLY your Index finger. The system will track your fingertip and render ink on the screen.
+3. **To Exit:** Press the 'q' key on your keyboard to safely close the video window and terminate the program.
